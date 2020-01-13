@@ -14,7 +14,7 @@ body {
   font-size: 16px;
   padding: 0;
   margin: 0;
-  background: $black;
+  background: $off-white;
 }
 
 .container {
@@ -58,15 +58,26 @@ header {
     .navigation {
       nav {
         a {
-          margin: 0 20px;
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
           text-decoration: none;
-          letter-spacing: 1.75px;
-          text-transform: uppercase;
-          font-size: 0.75rem;
-          color: $white;
+          font-size: 17px;
+          border-bottom: 1px solid transparent;
+          transition: 0.5s;
           &:last-child {
             margin-right: 0px;
           }
+
+          &:hover {
+            border-bottom: 1px solid $white;
+          }
+          &:active {
+            border-bottom: 1px solid $white;
+          }
+
         }
       }
     }
@@ -156,27 +167,31 @@ header {
   }
 }
 
+
 //About blurb
 
 .about-blurb {
-  padding: 48px 0;
+  padding: 0;
+  padding-bottom: 0; 
   background: $white;
   position: relative;
   .inner-blurb {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding:0;
     .content {
       width: 33%;
+      
       @media (max-width: 1440px) {
         width: 40%;
       }
-      h3 {
+      h3 {  
         font-weight: 700;
         text-transform: uppercase;
         font-size: 1.8rem;
-        letter-spacing: 1.5px;
-        margin: 0;
+        letter-spacing: 15px;
+        
       }
       p {
         font-size: 1rem;
@@ -244,20 +259,30 @@ header {
 
 //video section
 .video-section {
-  margin-top: 160px;
+  padding: 1rem;
+  background: $color-principal;
+  h1 {
+    font-style: italic;
+    
+    
+  }
+
+  p{
+    color: $off-white;
+  }
   .container {
     .video-player {
       width: 100%;
-      margin: 0 auto;
       video {
         width: 100%;
         outline: none;
       }
     }
+    
     .video-content {
       display: flex;
       justify-content: space-between;
-      margin: 80px 0 120px;
+      padding: 8rem;
       .title {
         width: 50%;
         h3 {
@@ -271,7 +296,7 @@ header {
       .content {
         width: 50%;
         p {
-          font-size: 1rem;
+          font-size: 2rem;
           line-height: 2rem;
           font-weight: 300;
           margin: 0;
@@ -305,7 +330,7 @@ footer {
     }
   }
   .footer {
-    background: $off-white;
+    background:$off-white;
     height: 80px;
     .inner {
       padding: 0 120px;
@@ -315,7 +340,8 @@ footer {
       justify-content: space-between;
       .socials {
         a {
-          margin: 0 8px;
+          margin: 0 7px;
+          flex-direction: row;
         }
       }
     }

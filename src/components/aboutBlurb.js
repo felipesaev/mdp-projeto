@@ -2,11 +2,15 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
+import config from 'react-reveal/globals';
+import Zoom from 'react-reveal/Zoom';
+
+config({ ssrFadeout: true });
 
 const AboutBlurb = () => {
   const data = useStaticQuery(graphql`
     query {
-      flower: file(relativePath: { eq: "home.png" }) {
+      flower: file(relativePath: { eq: "alineabout.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -26,25 +30,28 @@ const AboutBlurb = () => {
     <div className="about-blurb">
       <div className="container">
         <div className="inner-blurb">
+      
           <div className="content" 
           data-sal="slide-left"
           data-sal-duration="3s"
           data-sal-delay="500"
           data-sal-easing="ease-out-back"
           >
+              <Zoom ssrFadeout>
+           
             <h3>Todas por todas</h3>
             <p>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using ‘Content here,
-              content here’, making it look like readable English. Many desktop
-              publishing packages and web page editors now use Lorem Ipsum as
-              their default model text, and a search for ‘lorem ipsum’ will
-              uncover many web sites still in their infancy. Various versions
-              have evolved over the years, sometimes by accident, sometimes on
-              purpose (injected humour and the like).
+            Juntas seremos mais fortes, juntas criaremos um elo
+            de amor que cobrirá toda dor e tristeza.<br/><br/>
+
+            O projeto "Mulheres de peito" surgiu após minha grande 
+            amiga Aline Bertholdo Tavolaro ser diagnosticada com 
+            cancer de mama, o momento do encontro com as amigas , a 
+            maquiagem e sorrisos, foram fundamentais para trazer 
+            alegria e ainda ajuda-la no tratamento , hoje ela brilha no 
+            céu. 
             </p>
+            </Zoom>
             <div className="btn-row">
               <Link to="/work">View Series</Link>
             </div>
