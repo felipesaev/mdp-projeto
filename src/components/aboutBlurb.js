@@ -8,8 +8,8 @@ import Zoom from 'react-reveal/Zoom';
 config({ ssrFadeout: true });
 
 const AboutBlurb = () => {
-  const data = useStaticQuery(graphql`
-    query {
+  const data = useStaticQuery(
+    graphql` query {
       flower: file(relativePath: { eq: "alineabout.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
