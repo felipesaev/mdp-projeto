@@ -36,7 +36,7 @@ const LogoP = () => {
     `
   )
 
-  return <Logo fluid={avatarImage.childImageSharp.fluid} />
+  return <LogoP fluid={avatarImage.childImageSharp.fluid} />
 }
 
 const Header = () => (
