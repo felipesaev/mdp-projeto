@@ -44,7 +44,7 @@ const Header = () => (
     <div className="container">
       <div className="inner-header">
         <div className="logo">
-          <LogoP/>
+          <Logo/>
         </div>
         <div className="navigation">
           <nav>
