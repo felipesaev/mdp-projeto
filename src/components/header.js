@@ -10,7 +10,7 @@ import Img from 'gatsby-image'
 
 
 
-const Logo = styled(Img)`
+const LogoWapper = styled(Img)`
   height: 3.75rem;
   top: 8px;
   margin: 2rem;
@@ -21,7 +21,7 @@ const Logo = styled(Img)`
   `}
 `
 
-const LogoP = () => {
+const Logo = () => {
   const { avatarImage } = useStaticQuery(
     graphql`
       query {
@@ -36,7 +36,7 @@ const LogoP = () => {
     `
   )
 
-  return <LogoP fluid={avatarImage.childImageSharp.fluid} />
+  return <LogoWapper fluid={avatarImage.childImageSharp.fluid} />
 }
 
 const Header = () => (
