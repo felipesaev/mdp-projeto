@@ -48,7 +48,7 @@ const Header = () => (
         </div>
         <div className="navigation">
           <nav>
-            <Link hrefLang="www.google.com.br">Sobre nós</Link>
+            <a href="www.google.com.br">Sobre nós</a>
             <Link to="/work">Blog</Link>
             <Link to="/contact">Contato</Link>
             <Link to="/contact"><Jump>Participe</Jump></Link>
