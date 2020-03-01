@@ -27,7 +27,7 @@ const AboutBlurb = () => {
     }
   `)
   return (
-    <div className="about-blurb">
+    <div id="about" className="about-blurb">
       <div className="container">
         <div className="inner-blurb">
       

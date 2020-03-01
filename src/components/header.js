@@ -49,7 +49,7 @@ const Header = () => (
         <div className="navigation">
           <nav>
             <a href="www.google.com.br">Sobre nós</a>
-            <Link to="/work">Blog</Link>
+            <Link to="#about">Blog</Link>
             <Link to="/contact">Contato</Link>
             <Link to="/contact"><Jump>Participe</Jump></Link>
           </nav>
