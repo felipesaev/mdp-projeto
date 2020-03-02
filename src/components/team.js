@@ -13,7 +13,7 @@ const CarouselUI = ({ children }) => <Container>{children}</Container>;
 const Carousel = makeCarousel(CarouselUI);
 
 const Slider = () => (
-  <Carousel defaultWait={1000} /*wait for 1000 milliseconds*/ >
+  <Carousel  defaultWait={1000} /*wait for 1000 milliseconds*/ >
     <Slide right>
       <div>
         <h1>Slide 1</h1>

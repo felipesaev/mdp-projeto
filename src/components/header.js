@@ -48,10 +48,10 @@ const Header = () => (
         </div>
         <div className="navigation">
           <nav>
-            <a href="www.google.com.br">Sobre nós</a>
+            <a Link to="#about">Sobre nós</a>
             <Link to="#about">Blog</Link>
-            <Link to="/contact">Contato</Link>
-            <Link to="/contact"><Jump>Participe</Jump></Link>
+            <Link to="#contact">Contato</Link>
+            <Link to="#participe"><Jump>Participe</Jump></Link>
           </nav>
         </div>
       </div>
