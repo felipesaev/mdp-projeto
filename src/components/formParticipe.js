@@ -1,6 +1,6 @@
 import React from "react"
 
-export default class IndexPage extends React.Component {
+export default class FormPage extends React.Component {
   state = {
     firstName: "",
     lastName: "",

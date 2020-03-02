@@ -8,7 +8,7 @@ import Header from "../components/header"
 import Banner from "../components/banner"
 import AboutBlurb from "../components/aboutBlurb"
 import VideoSection from "../components/videoSection"
-import IndexPage from '../components/formParticipe';
+import FormPage from '../components/formParticipe'
 
 import Footer from "../components/footer"
 
@@ -17,7 +17,7 @@ const IndexPage = () => (
     <Header />
     <Banner />
     <AboutBlurb />   
-    <IndexPage/> 
+    <FormPage/> 
     <VideoSection />   
     <Footer />
   </div>
