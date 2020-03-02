@@ -19,6 +19,7 @@ export default class FormPage extends React.Component {
   }
   render() {
     return (
+        <section className="pageForm">
       <form onSubmit={this.handleSubmit}>
         <label>
           First name
@@ -40,6 +41,7 @@ export default class FormPage extends React.Component {
         </label>
         <button type="submit">Submit</button>
       </form>
+      </section>
     )
   }
 }

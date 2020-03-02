@@ -84,6 +84,15 @@ header {
   }
 }
 
+//pageForm 
+.pageForm {
+  display: flex;
+  align-items: center;
+  background-color: $color-principal;
+  position: relative;
+  height: 100vh;
+}
+
 //Banner
 .banner {
   display: flex;
