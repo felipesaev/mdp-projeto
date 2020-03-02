@@ -20,26 +20,56 @@ export default class FormPage extends React.Component {
   render() {
     return (
         <section className="pageForm">
+        <div className="imageForm">
+        </div>
+          
       <form onSubmit={this.handleSubmit}>
         <label>
-          First name
+          Primeiro Nome
           <input
             type="text"
             name="firstName"
+            placeholder="digite seu primeiro nome"
             value={this.state.firstName}
             onChange={this.handleInputChange}
           />
         </label>
         <label>
-          Last name
+          Sobrenome
           <input
             type="text"
+            placeholder="digite seu ultimo nome"
+
             name="lastName"
             value={this.state.lastName}
             onChange={this.handleInputChange}
           />
         </label>
-        <button type="submit">Submit</button>
+
+        <label>
+          Digite o motivo da sua participação
+          <textarea
+            type="text"
+            placeholder="digite aqui"
+
+            name="participacao"
+            //value={this.state.lastName}
+           // onChange={this.handleInputChange}
+          />
+        </label>
+
+        <label>
+          Deixe seu numero, entraremos em contato
+          <input
+            placeholder="(xx) xxxxx-xxxx"
+
+            type="number"
+            name="tel"
+           // value={this.state.lastName}
+           // onChange={this.handleInputChange}
+          />
+        </label>
+        <button type="submit">Enviar</button>
       </form>
       </section>
     )
