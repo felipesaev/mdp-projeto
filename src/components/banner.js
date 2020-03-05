@@ -3,7 +3,7 @@ import Slide from 'react-reveal/Slide';
 
 const Banner = () => { 
   return (
-    <div className="banner">
+    <div id="home"className="banner">
       <div className="container">
         <div className="row"> 
           

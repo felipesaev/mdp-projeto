@@ -19,58 +19,56 @@ export default class FormPage extends React.Component {
   }
   render() {
     return (
-        <section className="pageForm">
+      <section id ="participe"className="pageForm">
         <div className="imageForm">
         </div>
-          
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          Primeiro Nome
+        <form onSubmit={this.handleSubmit}>
+          <label>
+            Primeiro Nome
           <input
-            type="text"
-            name="firstName"
-            placeholder="digite seu primeiro nome"
-            value={this.state.firstName}
-            onChange={this.handleInputChange}
-          />
-        </label>
-        <label>
-          Sobrenome
+              type="text"
+              name="firstName"
+              placeholder="Primeiro nome"
+              value={this.state.firstName}
+              onChange={this.handleInputChange}
+            />
+          </label>
+          <label>
+            Sobrenome
           <input
-            type="text"
-            placeholder="digite seu ultimo nome"
+              type="text"
+              placeholder="Último nome"
 
-            name="lastName"
-            value={this.state.lastName}
-            onChange={this.handleInputChange}
-          />
-        </label>
+              name="lastName"
+              value={this.state.lastName}
+              onChange={this.handleInputChange}
+            />
+          </label>
 
-        <label>
-          Digite o motivo da sua participação
+          <label>
+            Digite o motivo da sua participação
           <textarea
-            type="text"
-            placeholder="digite aqui"
+              type="text"
+              placeholder="Digite aqui"
 
-            name="participacao"
+              name="participacao"
             //value={this.state.lastName}
-           // onChange={this.handleInputChange}
-          />
-        </label>
+            // onChange={this.handleInputChange}
+            />
+          </label>
 
-        <label>
-          Deixe seu numero, entraremos em contato
+          <label>
+            Deixe seu numero, entraremos em contato
           <input
-            placeholder="(xx) xxxxx-xxxx"
-
-            type="number"
-            name="tel"
-           // value={this.state.lastName}
-           // onChange={this.handleInputChange}
-          />
-        </label>
-        <button type="submit">Enviar</button>
-      </form>
+              placeholder="(xx) xxxxx-xxxx"
+              type="number"
+              name="tel"
+            // value={this.state.lastName}
+            // onChange={this.handleInputChange}
+            />
+          </label>
+          <button className="buttonName" type="submit">Enviar</button>
+        </form>
       </section>
     )
   }
